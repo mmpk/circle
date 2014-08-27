@@ -12,6 +12,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
         value: function Main() {
             this.super();
+            
+            var flow = this.templateObjects.flow;
+            flow.addBeforePathChangeListener("scroll", funtion(v){
+                console.log("SCROLL: "+v)                                
+            })
         }
     }
 });
