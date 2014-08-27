@@ -21,7 +21,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             flow.addBeforePathChangeListener("scroll", function(v){
                 console.log("SCROLL: " + Math.round(v))  
                 //var arr =  r.content.push(r.content.pop())
-                var last = r.content.pop()
+                var last = r.content.shift()
                 console.log("ARR: " + last) 
             });
         }
