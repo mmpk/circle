@@ -17,9 +17,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function() {
             var flow = this.templateObjects.flow;
-           
+            var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
-                console.log("SCROLL: " + Math.round(v))                                
+                console.log("SCROLL: " + Math.round(v))  
+                r.content = r.content.Push(r.content.Pop())
             });
         }
     }                               
