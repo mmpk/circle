@@ -20,8 +20,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
                 console.log("SCROLL: " + Math.round(v))  
-                var arr =  r.content.push(r.content.pop())
-                console.log("ARR: " + arr) 
+                //var arr =  r.content.push(r.content.pop())
+                var last = r.content.pop()
+                console.log("ARR: " + last) 
             });
         }
     }                               
