@@ -16,10 +16,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     templateDidLoad: {
         value: function() {
+            /*
             var flow = this.templateObjects.flow;
             flow.addBeforePathChangeListener("scroll", funtion(v){
                 console.log("SCROLL: "+v)                                
-            })
+            })*/
         }
     }                               
 });
