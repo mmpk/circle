@@ -16,14 +16,19 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     },
     templateDidLoad: {
         value: function() {
+            var t = false;
             var flow = this.templateObjects.flow;
             var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
                 console.log("SCROLL: " + Math.round(v))  
+                if(t)
+                {
                 var a =  r.content.push(r.content.shift())
                 console.log(a)
                 r.content = a
-                 console.log(r.content)
+                console.log(r.content)
+                }
+                t= true
             });
         }
     }                               
