@@ -23,10 +23,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 console.log("SCROLL: " + Math.round(v))  
                 if(t)
                 {
-                var a =  r.content;
-                console.log(a)
-                r.content = a
-                console.log(r.content)
+                    r.content.push(r.content.shift())
+                    console.log(r.content)
                 }
                 t= true
             });
