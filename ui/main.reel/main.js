@@ -13,7 +13,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
             
-            var flow = this.templateObjects.flow;
+            var flow = templateObjects.flow;
             flow.addBeforePathChangeListener("scroll", funtion(v){
                 console.log("SCROLL: "+v)                                
             })
