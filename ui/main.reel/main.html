@@ -13,15 +13,20 @@
                 "element": {"#": "main"}
             }
         },
-        "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener",
+        "button": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "action": "onHover",
-                "handler": {"@": "owner"}
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
             },
-            "_dev": {
-                "isHidden": true
-            }
+            "listeners": [
+                {
+                    "type": "hover",
+                    "useCapture": true,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "flow": {
             "prototype": "montage/ui/flow.reel",
@@ -211,20 +216,14 @@
             },
             "bindings": {
                 "value": {"<-": "@flow:iteration.object"}
-            },
-            "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": true,
-                    "listener": {"@": "actionEventListener"}
-                }
-            ]
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <button data-montage-id="button"> </button>
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
             <div class="obj">
                 <h1 data-montage-id="title">
