@@ -201,7 +201,14 @@
             },
             "bindings": {
                 "value": {"<-": "@flow:iteration.object"}
-            }
+            },
+            "listeners": [
+                {
+                    "type": "hover",
+                    "useCapture": true,
+                    "listener": {"@": "owner"}
+                }
+            ]
         }
     }
     </script>
