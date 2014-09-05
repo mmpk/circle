@@ -33,7 +33,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    handleHover: {
+    handleButtonHover: {
         value: function () {
             console.log("HOVER CAPTURE")
         }
