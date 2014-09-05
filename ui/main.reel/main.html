@@ -13,6 +13,16 @@
                 "element": {"#": "main"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "customFoo",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -25,7 +35,7 @@
                 {
                     "type": "mouseover",
                     "useCapture": false,
-                    "listener": {"@": "owner"}
+                    "listener": {"@": "actionEventListener"}
                 }
             ]
         },
@@ -223,11 +233,11 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main">
+    <div class="Main" data-montage-skin="light" data-montage-id="main">
         <button data-montage-id="button">
 
         </button>
-        <div style="position: absolute; top: 100px; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+        <div data-montage-id="flow" style="position: absolute; top: 100px; left: 0; right: 0; bottom: 0">
             <div class="obj">
                 <h1 data-montage-id="title">
 
