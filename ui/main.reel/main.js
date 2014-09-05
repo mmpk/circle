@@ -23,7 +23,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 console.log("SCROLL: " + Math.round(v))  
                 if(t)
                 {
-                     r.content= r.content.concat(r.content)
+                     //r.content= r.content.concat(r.content)
                     console.log(r.content)
                 }
                 t= true
