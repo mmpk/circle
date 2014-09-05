@@ -24,10 +24,17 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 if(t)
                 {
                      //r.content= r.content.concat(r.content)
-                    console.log(r.content)
+                    //console.log(r.content)
                 }
                 t= true
             });
         }
-    }                               
+    },
+
+    handleTitleHover: {
+        value: function (event) {
+            console.log("HOVER")
+        }
+    }
+
 });
