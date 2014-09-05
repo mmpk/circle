@@ -41,6 +41,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     captureTitleHover: {
         value: function (event) {
+            console.log("HOVER CAPTURE")
         }
     }
 

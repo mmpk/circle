@@ -13,6 +13,16 @@
                 "element": {"#": "main"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "onHover",
+                "handler": {"@": "owner"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "flow": {
             "prototype": "montage/ui/flow.reel",
             "properties": {
@@ -206,7 +216,7 @@
                 {
                     "type": "hover",
                     "useCapture": true,
-                    "listener": {"@": "owner"}
+                    "listener": {"@": "actionEventListener"}
                 }
             ]
         }
