@@ -25,6 +25,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 if(v > 4){
                  t++
                  flow.headOffset = 4
+                 flow.tailOffset = 4
                 }
             });
             
