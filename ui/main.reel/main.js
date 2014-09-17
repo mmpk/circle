@@ -27,6 +27,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 r.content.push(   r.content[t] )
                 if(r.content.length > 12){
                     r.content.splice(0,5)   
+                    flow.scroll = 0
                 }
                   console.log("LEN: " + r.content.length)  
                 }
