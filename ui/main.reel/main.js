@@ -26,8 +26,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                  t++
                  
                 r.content.push(   r.content[t] )
-                  if(t > 12) r.content.splice(0,5)
-                  flow.scroll = 1
+                if(t > 12){
+                    r.content.splice(0,5)
+                     t=1   
+                }
                   console.log("LEN: " + r.content.length)  
                 }
             });
