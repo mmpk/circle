@@ -24,8 +24,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 console.log("SCROLL: " + Math.round(v))  
                 if(v > t){
                  t++
-                 flow.headOffset = t
-                  console.log("T: " + t) 
+                 flow.tailOffset = t
                 }
             });
             
