@@ -22,9 +22,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
                 console.log("SCROLL: " + Math.round(v))  
-                if(v > 4){
+                if(v > t){
                  t++
-                r.content.push([7,8,9])
+                r.content.push(t)
                 }
             });
             
