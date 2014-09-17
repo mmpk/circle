@@ -21,14 +21,12 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var flow = this.templateObjects.flow;
             var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
-                console.log("SCROLL: " + Math.round(v))  
+               // console.log("SCROLL: " + Math.round(v))  
                 if(v > t){
-                 t++
-                 
+                t++                 
                 r.content.push(   r.content[t] )
-                if(t > 12){
-                    r.content.splice(0,5)
-                     t=1   
+                if(r.content.length > 12){
+                    r.content.splice(0,5)   
                 }
                   console.log("LEN: " + r.content.length)  
                 }
