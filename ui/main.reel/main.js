@@ -24,7 +24,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 console.log("SCROLL: " + Math.round(v))  
                 if(v > t){
                  t++
-                  console.log("T: " + t)) 
+                  console.log("T: " + t) 
                 }
             });
             
