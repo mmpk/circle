@@ -25,6 +25,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 if(v > t){
                  t++
                 r.content.push(t)
+                 r.content.pop()
                 }
             });
             
