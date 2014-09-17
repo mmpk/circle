@@ -21,7 +21,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var flow = this.templateObjects.flow;
             var r = this.templateObjects.range;
             flow.addBeforePathChangeListener("scroll", function(v){
-               // console.log("SCROLL: " + Math.round(v))  
+                console.log("SCROLL: " + Math.round(v))  
                 if(v > t){
                 t++                 
                 r.content.push(   r.content[t] )
